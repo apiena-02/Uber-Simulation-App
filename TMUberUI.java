@@ -6,8 +6,6 @@ import java.io.FileNotFoundException;
 
 // Simulation of a Simple Command-line based Uber App 
 
-// This system supports "ride sharing" service and a delivery service
-
 public class TMUberUI
 {
   public static void main(String[] args)
@@ -35,17 +33,17 @@ public class TMUberUI
         else if (action.equalsIgnoreCase("Q") || action.equalsIgnoreCase("QUIT"))
           return;
         // Print all the registered drivers
-        else if (action.equalsIgnoreCase("DRIVERS"))  // List all drivers
+        else if (action.equalsIgnoreCase("DRIVERS"))  
         {
           tmuber.listAllDrivers(); 
         }
         // Print all the registered users
-        else if (action.equalsIgnoreCase("USERS"))  // List all users
+        else if (action.equalsIgnoreCase("USERS"))  
         {
           tmuber.listAllUsers(); 
         }
         // Print all current ride requests or delivery requests
-        else if (action.equalsIgnoreCase("REQUESTS"))  // List all requests
+        else if (action.equalsIgnoreCase("REQUESTS"))  
         {
           tmuber.listAllServiceRequests(); 
         }
@@ -99,7 +97,7 @@ public class TMUberUI
           if (scanner.hasNextDouble())
           {
             wallet = scanner.nextDouble();
-            scanner.nextLine(); // consume nl!! Only needed when mixing strings and int/double
+            scanner.nextLine();
           }
           tmuber.registerNewUser(name, address, wallet);
           System.out.printf("User: %-15s Address: %-15s Wallet: %2.2f", name, address, wallet);
@@ -107,11 +105,6 @@ public class TMUberUI
         // Request a ride
         else if (action.equalsIgnoreCase("REQRIDE")) 
         {
-          // Get the following information from the user (on separate lines)
-          // Then use the TMUberSystemManager requestRide() method properly to make a ride request
-          // "User Account Id: "      (string)
-          // "From Address: "         (string)
-          // "To Address: "           (string)
           String accountId = "";
           System.out.print("User Account Id: ");
           if (scanner.hasNextLine())
@@ -135,13 +128,6 @@ public class TMUberUI
         // Request a food delivery
         else if (action.equalsIgnoreCase("REQDLVY")) 
         {
-          // Get the following information from the user (on separate lines)
-          // Then use the TMUberSystemManager requestDelivery() method properly to make a ride request
-          // "User Account Id: "      (string)
-          // "From Address: "         (string)
-          // "To Address: "           (string)
-          // "Restaurant: "           (string)
-          // "Food Order #: "         (string)
           String accountId = "";
           System.out.print("User Account Id: ");
           if (scanner.hasNextLine())

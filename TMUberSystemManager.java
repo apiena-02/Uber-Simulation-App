@@ -19,10 +19,11 @@ public class TMUberSystemManager
   // Private map of users, key is user account id and value is the user
   private Map<String, User> users;
   private ArrayList<Driver> drivers;
+  
   // Private ArrayList for userList used in sorting
   private ArrayList<User> userList;
 
-  // private Array of queues to store service requests 
+  // Private Array of queues to store service requests 
   private Queue<TMUberService>[] serviceRequests;
 
   public double totalRevenue; // Total revenues accumulated via rides and deliveries
@@ -30,6 +31,7 @@ public class TMUberSystemManager
   // Rates per city block
   private static final double DELIVERYRATE = 1.2;
   private static final double RIDERATE = 1.5;
+
   // Portion of a ride/delivery cost paid to the driver
   private static final double PAYRATE = 0.1;
 
@@ -42,12 +44,15 @@ public class TMUberSystemManager
     // Initialize a new LinkedHashMap to store users
     users = new LinkedHashMap<>();
     drivers = new ArrayList<Driver>();
+
     // Initialize a 4 new queues for each zone and their service requests
     serviceRequests = new Queue[4];
+
     // Initialize the userList ArrayList
     userList = new ArrayList<User>();
     
     totalRevenue = 0;
+
     // Inititalizing each queue to a linkedlist 
     for (int i = 0; i < serviceRequests.length; i++) 
     {
