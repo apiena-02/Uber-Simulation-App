@@ -1,5 +1,3 @@
-// Name: Apiena Selvarajah 
-// Student Number: 501168369
 /*
  * 
  * This class simulates a food delivery service for a simple Uber app

@@ -1,5 +1,3 @@
-// Name: Apiena Selvarajah 
-// Student Number: 501168369
 import java.util.Arrays;
 import java.util.Scanner;
 

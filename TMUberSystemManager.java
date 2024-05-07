@@ -1,5 +1,3 @@
-// Name: Apiena Selvarajah 
-// Student Number: 501168369
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
