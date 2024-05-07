@@ -1,9 +1,4 @@
-/*
- * 
- * This class simulates a food delivery service for a simple Uber app
- * 
- * A TMUberDelivery is-a TMUberService with some extra functionality
- */
+// This class simulates a food delivery service for a simple Uber app
 public class TMUberDelivery extends TMUberService
 {
   public static final String TYPENAME = "DELIVERY";
@@ -15,7 +10,6 @@ public class TMUberDelivery extends TMUberService
   public TMUberDelivery(String from, String to, User user, int distance, double cost,
                         String restaurant, String order)
   {
-    // Fill in the code - make use of the super method
     super(from, to, user, distance, cost, TYPENAME);
     this.restaurant = restaurant;
     this.foodOrderId = order;
@@ -42,16 +36,10 @@ public class TMUberDelivery extends TMUberService
   {
     this.foodOrderId = foodOrderId;
   }
-  /*
-   * Two Delivery Requests are equal if they are equal in terms of TMUberServiceRequest
-   * and the restaurant and food order id are the same  
-   */
+
+  // Check if two delivery requests are equal (Two Delivery Requests are equal if they are equal in terms of TMUberServiceRequest)
   public boolean equals(Object other)
   {
-    // First check to see if other is a Delivery type
-    // Cast other to a TMUService reference and check type
-    // If not a delivery, return false
-
     // Cast other to TMUberService 
     TMUberService request = (TMUberService) other;
 
@@ -69,12 +57,10 @@ public class TMUberDelivery extends TMUberService
     }
     return false;
   }
-  /*
-   * Print Information about a Delivery Request
-   */
+
+  // Print Information about a Delivery Request
   public void printInfo()
   {
-    // Then print specific subclass info
     super.printInfo();
     System.out.printf("\nRestaurant: %-9s Food Order #: %-3s", restaurant, foodOrderId); 
   }

@@ -1,3 +1,4 @@
+// This class simulates a car driver in a simple uber app 
 public class Driver
 {
   private String id;
@@ -43,7 +44,7 @@ public class Driver
                       id, name, carModel, licensePlate, wallet, status, address, zone);
     }
   }
-  
+
   // Getters and Setters
   public String getType()
   {
