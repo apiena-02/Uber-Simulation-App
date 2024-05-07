@@ -1,9 +1,3 @@
-/*
- * 
- * This class simulates a car driver in a simple uber app 
- * 
- * Everything has been done for you except the equals() method
- */
 public class Driver
 {
   private String id;
@@ -33,31 +27,6 @@ public class Driver
     this.zone = CityMap.getCityZone(address);
   }
 
-  // Set service 
-  public void setService(TMUberService service) 
-  {
-    this.service = service;
-  }
-  // Get the drivers zone
-  public int getZone()
-  {
-    return this.zone;
-  }
-  // Set the drivers zone
-  public void setZone(int num)
-  {
-    this.zone = num;
-  }
-  // Set the drivers address
-  public void setAddress(String newAddress)
-  {
-    this.address = newAddress;
-  }
-  // Get the service of the driver
-  public TMUberService getService()
-  {
-    return this.service;
-  }
   // Print Information about a driver
   public void printInfo()
   {
@@ -74,6 +43,7 @@ public class Driver
                       id, name, carModel, licensePlate, wallet, status, address, zone);
     }
   }
+  
   // Getters and Setters
   public String getType()
   {
@@ -131,12 +101,28 @@ public class Driver
   {
     this.wallet = wallet;
   }
-  /*
-   * Two drivers are equal if they have the same name and license plates.
-   * This method is overriding the inherited method in superclass Object
-   * 
-   * Fill in the code 
-   */
+  public void setService(TMUberService service) 
+  {
+    this.service = service;
+  }
+  public int getZone()
+  {
+    return this.zone;
+  }
+  public void setZone(int num)
+  {
+    this.zone = num;
+  }
+  public void setAddress(String newAddress)
+  {
+    this.address = newAddress;
+  }
+  public TMUberService getService()
+  {
+    return this.service;
+  }
+
+  // Check if two drivers are equal (Two drivers are equal if they have the same name and license plates)
   public boolean equals(Object other)
   {
     // Cast other to Driver 
