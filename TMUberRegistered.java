@@ -21,7 +21,7 @@ public class TMUberRegistered
         return "" + firstDriverId + current.size();
     }
 
-    // Database of Preregistered users
+    // Load Users from file
     public static ArrayList<User> loadPreregisteredUsers(String filename) throws FileNotFoundException
     {
         // Create users ArrayList
@@ -51,8 +51,7 @@ public class TMUberRegistered
         return users;
     }
 
-    // Database of Preregistered users
-    // In Assignment 2 these will be loaded from a file
+    // Load Drivers from file 
     public static ArrayList<Driver> loadPreregisteredDrivers(String filename) throws FileNotFoundException
     {
         // Create drivers ArrayList
