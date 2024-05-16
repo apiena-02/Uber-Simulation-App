@@ -1,5 +1,7 @@
 # TMUber
 
+This project was completed as an assignment for the CPS209 course at Toronto Metropolitan University
+
 TMUber is a simplified simulation of an Uber-like application for rides and deliveries, implemented as a command-line interface application. The project is designed to handle users and drivers, manage service requests, and simulate various actions typically associated with a ride-hailing and delivery service.
 
 To compile use javac TMUberUI.java and to run use java TMUberUI. 
