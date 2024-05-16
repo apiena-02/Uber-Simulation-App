@@ -170,11 +170,6 @@ public class TMUberUI
         {
           tmuber.sortByWallet();
         }
-        // Sort current service requests (ride or delivery) by distance
-        else if (action.equalsIgnoreCase("SORTBYDIST")) 
-        {
-          tmuber.sortByDistance();
-        }
         // Cancel a current service (ride or delivery) request
         else if (action.equalsIgnoreCase("CANCELREQ")) 
         {

@@ -693,14 +693,6 @@ public class TMUberSystemManager
 
     }
   }
-  // Sort trips (rides or deliveries) by distance
-  // Then list all current service requests
-  public void sortByDistance()
-  {
-    // Sort the service request ArrayList by distance
-    //Collections.sort(serviceRequests);
-    listAllServiceRequests();
-  }
 
 }
 
