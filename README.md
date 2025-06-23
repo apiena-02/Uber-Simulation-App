@@ -1,6 +1,7 @@
-# 🚗 TMUber 
+# 🚗 Uber-Simulation
 
-TMUber is a simplified simulation of an Uber-like ride and delivery service, built as a command-line interface (CLI) application in Java. The project manages users and drivers, processes service requests, and simulates common actions of a ride and delivery platform.
+
+A simplified simulation of an Uber-like ride and delivery service, built as a command-line interface (CLI) application in Java. The project manages users and drivers, processes service requests, and simulates common actions of a ride and delivery platform.
 
 ## Features
 - User and driver management
